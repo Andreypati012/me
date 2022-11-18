@@ -1,0 +1,621 @@
+@import "Null.scss";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import "media.scss";
+
+
+header{	
+background: rgb(69,72,77);
+background: -moz-linear-gradient(left, rgb(0, 0, 0) 50%, rgba(87, 184, 255, 1) 50%);
+background: -webkit-linear-gradient(left, rgb(0, 0, 0) 50%,rgba(87, 184, 255, 1) 50%);
+background: linear-gradient(to right, rgb(0, 0, 0) 50%,rgba(87, 184, 255, 1) 50%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );
+ width: 100%;
+ height: 1064px;
+ font-family: 'Orbitron';
+}
+
+.conteiner{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.header{
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	height: 62px;
+	align-items: center;
+	margin-bottom: 240px;
+}
+
+.header__logo{
+}
+
+.header__menu{
+	ul{
+		display: flex;
+		a{
+			color: #fff;
+		}
+	}
+	li{
+		padding-right: 40px;
+		font-size: 16px;
+	}
+}
+.header-attribute__content{
+	display: flex;
+}
+
+.header-attribute__btn button{
+	padding: 16px 31px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	color: #fff;
+	line-height: 30px;
+	background-color: rgba(87, 184, 255, 1);
+	border: 2px solid #fff;
+}
+
+.header-attribute__shop{
+	display: flex;
+	align-items: center;
+	padding-right: 50px;
+	position: relative;
+	&:before{
+		content: '';
+		display: block;
+		width: 50px;
+		height: 50px;
+		background: url('../img/Frame.png') 0px 0px no-repeat;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+}
+
+.header__content{
+	width: 100%;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__sport{
+	font-size: 16px;
+	line-height: 16px;
+	left: 31.5px;
+	color: rgba(87, 184, 255, 1);
+	position: relative;
+}
+
+.header__fire{
+	position: absolute;
+	top: -10px;
+	left: -40px;
+}
+
+.header__title{
+	font-size: 72px;
+	line-height: 86px;
+	max-width: 657px;
+	margin-bottom: 50px;
+}
+
+.header__text{
+	color: rgba(153, 153, 153, 1);
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 50px;
+	
+}
+
+.header__btn{
+	display: flex;
+    justify-content: space-between;
+	width: 446px;
+	.header__btn-left{
+		padding: 21px 34px;
+		background-color: rgba(87, 184, 255, 1);
+		font-size: 18px;
+		a{color: #fff;}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.header__btn-right{
+		padding: 21px 34px;
+		background-color: #000;
+		font-size: 18px;
+		a{color: #fff;}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+.header__block-right{
+	padding-left: 50px;
+	position: relative;
+	.header__image-mesenger{
+		position: absolute;
+		right: 0px;
+	}
+}
+
+
+//media запросы!
+@media(max-width: 1000px){
+    .conteiner{
+        padding: 0px 30px;
+    }
+	.header__logo img{
+		width: 280px;
+		height: 80px;
+	}
+	.header__menu{
+		li{font-size: 19px;}
+	}
+	.header-attribute__shop img{
+		width: 44px;
+		height: 44px;
+	}
+    .header-attribute__btn button{
+     font-size: 22px;
+	}
+	.header__sport{
+     font-size: 18px;
+	}
+	.header__title{
+
+	}
+	.header__content{
+	}
+	.header__text{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.header__btn-left a{
+      font-size: 23px;
+	}
+	.header__btn-right a{
+		font-size: 23px;
+	}
+	.header__btn{
+		display: flex;
+		justify-content: space-between;
+		width: 496px;
+	}
+	.header__block-right{
+		position: relative;
+		
+	}
+} 
+
+//адаптация под 910px
+@media(max-width: 910px){
+	.header{
+		padding-top: 50px;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.header__menu{
+		display: none;
+	}
+	.header__logo img{
+		width: 320px;
+		height: 90px;
+		margin-right: 60px;
+	}
+	.header-attribute__shop img{
+		width: 52px;
+		height: 52px;
+	}
+    .header-attribute__btn button{
+     font-size: 32px;
+	}
+	.header__sport{
+     font-size: 21px;
+	 color:rgb(31, 162, 255)
+	}
+	.header__title{
+		margin-left: 60px;
+	}
+	.header__block-left{
+	  text-align: center;
+	}
+	.header__content{
+		width: 800px;
+	}
+	.header__text{
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.header__btn-left a{
+      font-size: 28px;
+	}
+	.header__btn-left{
+     display: flex;
+	 justify-content: center;
+	 position: relative;
+	 left: 20px;
+	}
+	.header__btn-right a{
+		font-size: 28px;
+	}
+	.header__btn-right{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		left: 60px;
+	}
+	.header__btn{
+		display: flex;
+		justify-content: center;
+		margin-left: 100px;
+		text-align: center;
+	    
+	}
+	.header__image img{
+		display: none;
+	}
+	.header__image-mesenger{
+		display: none;
+	}
+	.header__fire{
+		position: absolute;
+		top: -10px;
+		left: 210px;
+	}
+}
+
+
+//адаптив 700px
+@media(max-width: 700px){
+	.header{
+		padding-top: 50px;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.header__menu{
+		display: none;
+	}
+	.header__logo img{
+		width: 350px;
+		height: 105px;
+		margin-right: 60px;
+	}
+	.header-attribute__shop img{
+		width: 56px;
+		height: 56px;
+	}
+    .header-attribute__btn button{
+     font-size: 34.7px;
+	}
+	.header__sport{
+     font-size: 21px;
+	 color:rgb(31, 162, 255)
+	}
+	.header__title{
+		font-size: 73px;
+		margin-left: 60px;
+	}
+	.header__block-left{
+	  text-align: center;
+	}
+	.header__content{
+		width: 800px;
+	}
+	.header__text{
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.header__btn-left a{
+      font-size: 30px;
+	}
+	.header__btn-left{
+     display: flex;
+	 justify-content: center;
+	 position: relative;
+	 left: 20px;
+	}
+	.header__btn-right a{
+		font-size: 30px;
+	}
+	.header__btn-right{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		left: 60px;
+	}
+	.header__btn{
+		display: flex;
+		justify-content: center;
+		margin-left: 100px;
+		text-align: center;
+	    
+	}
+	.header__image img{
+		display: none;
+	}
+	.header__image-mesenger{
+		display: none;
+	}
+	.header__fire{
+		position: absolute;
+		top: -10px;
+		left: 210px;
+	}
+}
+
+
+
+
+
+//адаптив 560px
+@media(max-width: 560px){
+	.header{
+		padding-top: 50px;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.header__menu{
+		display: none;
+	}
+	.header__logo img{
+		width: 360px;
+		height: 105px;
+		margin-right: 60px;
+	}
+	.header-attribute__shop img{
+		width: 58px;
+		height: 58px;
+	}
+    .header-attribute__btn button{
+     font-size: 35.7px;
+	}
+	.header__sport{
+     font-size: 21px;
+	 color:rgb(31, 162, 255)
+	}
+	.header__title{
+		font-size: 73px;
+		margin-left: 60px;
+	}
+	.header__block-left{
+	  text-align: center;
+	}
+	.header__content{
+		width: 800px;
+	}
+	.header__text{
+		font-size: 26px;
+		line-height: 34px;
+	}
+	.header__btn-left a{
+      font-size: 32px;
+	}
+	.header__btn-left{
+     display: flex;
+	 justify-content: center;
+	 position: relative;
+	 left: 20px;
+	}
+	.header__btn-right a{
+		font-size: 32px;
+	}
+	.header__btn-right{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		left: 60px;
+	}
+	.header__btn{
+		display: flex;
+		justify-content: center;
+		margin-left: 100px;
+		text-align: center;
+	    
+	}
+	.header__image img{
+		display: none;
+	}
+	.header__image-mesenger{
+		display: none;
+	}
+	.header__fire{
+		position: absolute;
+		top: -10px;
+		left: 210px;
+	}
+}
+
+
+
+
+
+
+//адаптив 560px
+@media(max-width: 480px){
+	.header{
+		padding-top: 50px;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.header__menu{
+		display: none;
+	}
+	.header__logo img{
+		width: 380px;
+		height: 110px;
+		margin-right: 60px;
+	}
+	.header-attribute__shop img{
+		width: 60px;
+		height: 60px;
+	}
+    .header-attribute__btn button{
+     font-size: 37.7px;
+	}
+	.header__sport{
+     font-size: 22px;
+	 color:rgb(31, 162, 255)
+	}
+	.header__title{
+		font-size: 73px;
+		margin-left: 60px;
+	}
+	.header__block-left{
+	  text-align: center;
+	}
+	.header__content{
+		width: 800px;
+	}
+	.header__text{
+		font-size: 28px;
+		line-height: 34px;
+	}
+	.header__btn-left a{
+      font-size: 34px;
+	}
+	.header__btn-left{
+     display: flex;
+	 justify-content: center;
+	 position: relative;
+	 left: 20px;
+	}
+	.header__btn-right a{
+		font-size: 34px;
+	}
+	.header__btn-right{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		left: 60px;
+	}
+	.header__btn{
+		display: flex;
+		justify-content: center;
+		margin-left: 100px;
+		text-align: center;
+	    
+	}
+	.header__image img{
+		display: none;
+	}
+	.header__image-mesenger{
+		display: none;
+	}
+	.header__fire{
+		position: absolute;
+		top: -10px;
+		left: 210px;
+	}
+}
+
+
+
+
+
+
+
+
+//адаптив 560px
+@media(max-width: 340px){
+	.header{
+		padding-top: 65px;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.header__menu{
+		display: none;
+	}
+	.header__logo img{
+		width: 400px;
+		height: 115px;
+		margin-right: 60px;
+	}
+	.header-attribute__shop img{
+		width: 64px;
+		height: 64px;
+	}
+    .header-attribute__btn button{
+     font-size: 39.7px;
+	 line-height: 35px;
+	}
+	.header__sport{
+     font-size: 23px;
+	 color:rgb(31, 162, 255)
+	}
+	.header__title{
+		font-size: 80px;
+		margin-left: 60px;
+	}
+	.header__block-left{
+	  text-align: center;
+	}
+	.header__content{
+		width: 800px;
+	}
+	.header__text{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.header__btn-left a{
+      font-size: 36px;
+	  letter-spacing: 1px;
+	}
+	.header__btn-left{
+     display: flex;
+	 justify-content: center;
+	 position: relative;
+	 left: 20px;
+	}
+	.header__btn-right a{
+		font-size: 36px;
+		letter-spacing: 1px;
+	}
+	.header__btn-right{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		left: 60px;
+	}
+	.header__btn{
+		display: flex;
+		justify-content: center;
+		margin-left: 100px;
+		text-align: center;
+	    
+	}
+	.header__image img{
+		display: none;
+	}
+	.header__image-mesenger{
+		display: none;
+	}
+	.header__fire{
+		position: absolute;
+		top: -10px;
+		left: 190px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
